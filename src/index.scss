@@ -1,0 +1,13 @@
+@import "./global/global.scss";
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body, html {
+  font-family: $font-family !important;
+}
+.MuiTypography-h6,
+input {
+    font-family: $font-family !important;
+}

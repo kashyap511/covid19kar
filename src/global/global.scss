@@ -1,0 +1,11 @@
+$color-main: #4974f5;
+$backgroundGradient: linear-gradient(rgb(60, 99, 172), rgb(119, 188, 201));
+$font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.MuiTypography-h6,
+input {
+    font-family: $font-family !important;
+}
+
+.s {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

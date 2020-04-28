@@ -1,0 +1,23 @@
+@import "../../../global/global.scss";
+.row {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.district {
+    width: 40%;
+    padding: 0 10px;
+}
+.data {
+    width: 12%;
+}
+.header {
+    background-image: $backgroundGradient;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    color: white;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px lightblue;
+}

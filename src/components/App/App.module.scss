@@ -1,0 +1,44 @@
+@import "../../global/global.scss";
+.main {
+  max-width: 500px;
+  margin: 20px;
+  font-family: $font-family !important;
+
+  @media (min-width: 500px) {
+    border: 1px solid $color-main;
+    border-radius: 4px;
+  }
+}
+
+.footer {
+  margin: 25px 0;
+  animation-name: footer;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+
+@-moz-keyframes footer { 
+  from {
+    color: red;
+  }
+  to {
+    color: orange;
+  }
+}
+@-webkit-keyframes footer { 
+  from {
+    color: red;
+  }
+  to {
+    color: orange;
+  }
+ }
+@keyframes footer { 
+  from {
+    color: red;
+  }
+  to {
+    color: orange;
+  }
+}

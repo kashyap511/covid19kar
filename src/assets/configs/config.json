@@ -1,0 +1,6 @@
+{
+    "api": {
+        "getDistrictWiseData": "https://api.covid19india.org/state_district_wise.json",
+        "getAllData": "https://api.covid19india.org/data.json"
+    }
+}
