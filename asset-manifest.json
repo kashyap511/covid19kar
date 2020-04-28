@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/covid19india/static/css/main.3ad124ce.chunk.css",
+    "main.js": "/covid19india/static/js/main.16670738.chunk.js",
+    "main.js.map": "/covid19india/static/js/main.16670738.chunk.js.map",
+    "runtime-main.js": "/covid19india/static/js/runtime-main.0a2b4a9a.js",
+    "runtime-main.js.map": "/covid19india/static/js/runtime-main.0a2b4a9a.js.map",
+    "static/js/2.c3a6a9af.chunk.js": "/covid19india/static/js/2.c3a6a9af.chunk.js",
+    "static/js/2.c3a6a9af.chunk.js.map": "/covid19india/static/js/2.c3a6a9af.chunk.js.map",
+    "index.html": "/covid19india/index.html",
+    "precache-manifest.ccfc7f8fce297953a9d0f20d196688c4.js": "/covid19india/precache-manifest.ccfc7f8fce297953a9d0f20d196688c4.js",
+    "service-worker.js": "/covid19india/service-worker.js",
+    "static/css/main.3ad124ce.chunk.css.map": "/covid19india/static/css/main.3ad124ce.chunk.css.map",
+    "static/js/2.c3a6a9af.chunk.js.LICENSE.txt": "/covid19india/static/js/2.c3a6a9af.chunk.js.LICENSE.txt",
+    "static/media/covidlogo.png": "/covid19india/static/media/covidlogo.b0f1593b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a2b4a9a.js",
+    "static/js/2.c3a6a9af.chunk.js",
+    "static/css/main.3ad124ce.chunk.css",
+    "static/js/main.16670738.chunk.js"
+  ]
+}
