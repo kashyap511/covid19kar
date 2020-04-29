@@ -9,6 +9,7 @@ class Routes extends Component {
 
 	render() {
 		return <Switch>
+			<Route exact path="/" exact component={CovidData} />
 			<Route path={ROUTES.COVID19KAR} exact component={CovidData} />
 			<Route path={ROUTES.ERROR_PAGE} component={Error} />
 			<Route component={CovidData} />
