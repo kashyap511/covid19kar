@@ -12,7 +12,7 @@ export default class Loader extends Component {
                         {configs.staySafe}
                     </div>
                 </div>
-                <p>&copy; SLU since 1993</p>
+                <p>&copy; No rights &#128540;</p>
             </div>
         )
     }
