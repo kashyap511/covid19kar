@@ -1,1 +1,2 @@
 export const SET_SELECTED_STATE = "SET_SELECTED_STATE";
+export const SET_SHOW_DIALOG = "SET_SHOW_DIALOG";

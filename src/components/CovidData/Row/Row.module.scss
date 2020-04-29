@@ -1,23 +1,25 @@
 @import "../../../global/global.scss";
 .row {
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     display: flex;
     box-sizing: border-box;
+    justify-content: space-between;
+    font-size: 11px;
+    border-bottom: 1px solid lightgray;
 }
 .district {
-    width: 40%;
-    padding: 0 10px;
+    width: 50%;
 }
 .data {
-    width: 12%;
+    width: 8%;
 }
 .header {
-    background-image: $backgroundGradient;
-    padding: 10px;
+    padding: 10px 0;
     width: 100%;
     display: flex;
-    color: white;
+    color: $font-color;
     box-sizing: border-box;
-    box-shadow: 2px 2px 2px lightblue;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
 }

@@ -9,12 +9,13 @@ import axios from 'axios';
 import configs from 'assets/configs/config.json';
 import classes from './AlertDialog.module.scss';
 import { fNum } from '../../utils/common-functions';
+import { connect } from 'react-redux';
+import * as actions from 'store/actions';
 
 
 class AlertDialog extends Component {
 
     state = {
-        isDialogOpen: false,
         data: {
             active: '',
             confirmed: '',
@@ -31,8 +32,8 @@ class AlertDialog extends Component {
         axios.get(configs.api.getAllData)
             .then((response) => {
                 const data = response.data.statewise[0];
-                this.setState({ ...this.state, data, isDialogOpen: true });
-                setTimeout(() => this.setState({ ...this.state, isDialogOpen: false }), 5000);
+                this.setState({ ...this.state, data});
+                this.props.setShowDialog(true);
             });
     }
 
@@ -41,11 +42,11 @@ class AlertDialog extends Component {
         return (
             <div>
                 <Dialog
-                    open={this.state.isDialogOpen}
+                    open={this.props.isDialogOpen}
                     aria-labelledby="alert-dialog-title"
                     aria-describedby="alert-dialog-description"
                 >
-                    <DialogTitle id="alert-dialog-title">{"Covid 19 cases across India"}</DialogTitle>
+                    <DialogTitle id="alert-dialog-title">{"Cases across India"}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-description">
                             <span className={classes.label}>
@@ -75,7 +76,7 @@ class AlertDialog extends Component {
                         </DialogContentText>
                     </DialogContent>
                     <DialogActions>
-                        <Button onClick={() => this.setState({ ...this.state, isDialogOpen: false })} color="primary" autoFocus>
+                        <Button onClick={() => this.props.setShowDialog(!this.props.isDialogOpen)} color="primary" autoFocus>
                             Close
                 </Button>
                     </DialogActions>
@@ -84,4 +85,10 @@ class AlertDialog extends Component {
         );
     }
 }
-export default AlertDialog;
+const mapStateToProps = (store) => ({
+    isDialogOpen: store.covidReducer.showDialog
+});
+const mapDispatchToProps = (dispatch) => ({
+    setShowDialog: showDialog => dispatch(actions.setShowDialog(showDialog))
+});
+export default connect(mapStateToProps, mapDispatchToProps)(AlertDialog);

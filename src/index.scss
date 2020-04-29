@@ -1,13 +1,15 @@
 @import "./global/global.scss";
+@import "./global/material-overrides.scss";
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: white;
 }
 body, html {
   font-family: $font-family !important;
+  text-transform: uppercase;
 }
-.MuiTypography-h6,
-input {
-    font-family: $font-family !important;
-}
+
+

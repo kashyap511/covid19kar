@@ -11,6 +11,11 @@ export function covidReducer(state = initialState, action) {
                 ...state,
                 selectedState: payload.state
             }
+            case actions.SET_SHOW_DIALOG:
+                return {
+                    ...state,
+                    showDialog: payload.showDialog
+                }
         default:
             break;
     }

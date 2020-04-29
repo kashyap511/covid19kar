@@ -1,3 +1,4 @@
 export const initialState = {
-    selectedState: 'Karnataka'
+    selectedState: 'Karnataka',
+    showDialog: false
 }

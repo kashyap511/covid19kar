@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Autocomplete } from '@material-ui/lab';
 import { TextField } from '@material-ui/core';
+import classes from './Search.module.scss';
 
 
 class Search extends Component {
@@ -11,6 +12,7 @@ class Search extends Component {
         return <Autocomplete
                     id="combo-box-demo"
                     options={this.props.options}
+                    blurOnSelect
                     getOptionLabel={(option) => option}
                     onChange={(e, v) => this.props.onChange(v)}
                     renderOption={(option) => (
@@ -18,7 +20,7 @@ class Search extends Component {
                             {option}
                         </div>
                     )}
-                    renderInput={(params) => <TextField {...params} label={this.props.label} variant="outlined" />}
+                    renderInput={(params) => <TextField className={classes.input} {...params} label={this.props.label} />}
                 />
     }
 }
