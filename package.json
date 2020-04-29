@@ -2,7 +2,7 @@
   "name": "covid19karnataka",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kashyap511.github.io/covid19india",
+  "homepage": "https://covid-19-bharat.herokuapp.com/",
   "dependencies": {
     "@material-ui/core": "^4.9.11",
     "@material-ui/icons": "^4.9.1",
