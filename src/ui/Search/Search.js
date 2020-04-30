@@ -8,7 +8,6 @@ class Search extends Component {
 
     render() {
 
-        debugger;
         return <Autocomplete
                     id="combo-box-demo"
                     options={this.props.options}

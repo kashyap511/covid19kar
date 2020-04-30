@@ -6,6 +6,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
   color: white;
+
+  @media (min-width: 500px) {
+    background-color: white;
+  }
 }
 body, html {
   font-family: $font-family !important;

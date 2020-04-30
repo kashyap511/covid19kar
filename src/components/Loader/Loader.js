@@ -12,7 +12,11 @@ export default class Loader extends Component {
                         {configs.staySafe}
                     </div>
                 </div>
-                <p>&copy; No rights &#128540;</p>
+                <p>&copy; No rights 
+                    <span role="img" aria-label="smile">
+                        &#128522;
+                    </span>
+                </p>
             </div>
         )
     }

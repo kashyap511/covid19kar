@@ -6,8 +6,17 @@
 
   @media (min-width: 500px) {
     border: 1px solid $color-main;
+    display: block;
+    align-self: center;
     border-radius: 4px;
+    margin: 30px auto;
+    background-color: black;
+    padding: 20px;
   }
+}
+
+.appBar {
+  margin: auto;
 }
 
 .footer {
@@ -41,4 +50,11 @@
   to {
     color: orange;
   }
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
