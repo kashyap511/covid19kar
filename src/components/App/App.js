@@ -16,7 +16,7 @@ class App extends Component {
 		return (
 			<Router>
 				<div>
-					{this.state.isLoaderOn && <Loader />}
+					{this.state.isLoaderOn && <Loader/>}
 					{!this.state.isLoaderOn && <div className={classes.main}>
 						<AppBar />
 						<AlertDialog />
