@@ -6,10 +6,13 @@ export default class Loader extends Component {
     render() {
         return (
             <div className={classes.loader}>
+                <div className={classes.title}>Welcome 
+                    <div className={classes.subtitle}>Mr. Umeshchandra Shastri</div>
+                </div>
                 <div className={classes.text1}>
-                    {configs.stayHome}
+                    {configs.stayHome + ' ' + configs.staySafe}
                     <div className={classes.text2}>
-                        {configs.staySafe}
+                        Get vaccinated
                     </div>
                 </div>
                 <p>&copy; No rights 

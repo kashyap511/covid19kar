@@ -22,6 +22,7 @@ class HeaderBar extends Component {
         );
     }
 }
+
 const mapStateToProps = (store) => ({
     selectedState: store.covidReducer.selectedState,
     showDialog: store.covidReducer.showDialog

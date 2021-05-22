@@ -2,10 +2,13 @@
 .root {
     position: relative;
     background-color: transparent;
-    color: $font-color;
+    color: #33ccff;
 }
 .menuButton {
     margin-right: 10px;
+}
+.name {
+    font-size: 10px;
 }
 .title {
     flex-grow: 1;
